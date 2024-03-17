@@ -1,0 +1,131 @@
+:root {
+    --animation-duration: .5s;
+    --alert-color: #842029;
+    --alert-bg: #f8d7da;
+    --alert-border-color: #f5c2c7;
+}
+
+::placeholder {
+    color: rgb(100, 99, 99) !important;
+}
+
+body {
+    background-color: #0D0D0D;
+    color: #f9f6f6;
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+span {
+    display: inline-block;
+}
+
+i {
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+/* ========> Loading <========== */
+.loading{
+    display: flex;
+    z-index: 999;
+}
+/* ===============> Navbar <========= */
+.side-nav-menu {
+    z-index: 99;
+    background-color: #0D0D0D;
+}
+
+.side-nav-menu ul li {
+    cursor: pointer;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.nav-header i {
+    color: black;
+}
+
+/* ============> Meals <========== */
+.meal .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #f9f6f6ca;
+    top: 140%;
+    transition: top var(--animation-duration);
+}
+
+.meal:hover .layer {
+    top: 0;
+}
+
+.contact button {
+    width: 10%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* =========> Recipies <========== */
+.recipes span {
+    padding: 7px 10px;
+    background-color: #CFF4FC;
+    margin: 10px;
+    color: rgb(83, 82, 82);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.recipy-content h4 {
+    font-weight: 700;
+}
+
+.recipy-content button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.recipy-content .btn1 {
+    background-color: #19804f;
+    transition: background-color var(--animation-duration);
+}
+
+.recipy-content .btn2 {
+    background-color: #d13948;
+    transition: background-color var(--animation-duration);
+}
+
+.recipy-content .btn2:hover {
+    background-color: #c42232;
+}
+
+.recipy-content .btn1:hover {
+    background-color: #146C43;
+}
+
+/* =============> Contact <========== */
+.alert-danger {
+    background-color: var(--alert-bg);
+    border-color: var(--alert-border-color);
+    color: var(--alert-color);
+}
