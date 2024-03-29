@@ -129,3 +129,15 @@ i {
     border-color: var(--alert-border-color);
     color: var(--alert-color);
 }
+
+/* Responsive Media Screens  */
+@media only screen and (max-width:992px){
+    #rowData{
+        padding: 0 20px ;
+    }
+}
+@media only screen and (max-width:576px){
+    #rowData{
+        padding: 0 20px 0 70px ;
+    }
+}
